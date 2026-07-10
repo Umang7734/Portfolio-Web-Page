@@ -59,6 +59,12 @@
   color: #fff;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 .header-navbar ul {
   margin: 0px;
   padding: 0px;
@@ -84,7 +90,7 @@
 /* <!----------------- Hero-Section-Start-------------- --> */
 
 .hero-section {
-  min-height: 100vh;
+ width: 100%;
   background-image: url(./images/h1_hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -131,6 +137,14 @@
   margin-bottom: 42px;
   max-width: 550px;
   line-height: 30px;
+}
+
+.hero-title h1{
+  overflow: hidden;
+}
+
+.hero-title h1 .char {
+  display: inline-block;
 }
 
 .hero-content-btns {
@@ -1065,3 +1079,196 @@ align-items: center;
     text-transform: capitalize;
 }
 
+
+    /* <!----- Contact-Section-Page----- --> */
+
+    .contact-Section{
+  background-image: url(./images/hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat; 
+  text-align: left;
+  background-size: contain;
+  min-height: 50vh;
+    }
+
+    .Contact-section-container{
+      min-height: 50vh;
+  max-width: 1200px;
+  padding: 10px 10%;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+    }
+
+    .contact-section-title h2{
+ font-family: "Rufina", serif;
+      font-size: 70px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    }
+
+    .contact-section-title span{
+   font-family: "Rubika", sans-serif;
+      color: #ec5b53;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/*-------------------- Contact Us Detail Section Styling--------------------- */
+.Contact-section {
+  width: 100%;
+  padding: 100px 8%;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bottom Section */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form h2 {
+  font-family: "Rufina", serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-form textarea,
+.contact-form input {
+  width: 100%;
+  padding: 18px 25px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  font-family: "Rufina", serif;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-row input {
+  width: 50%;
+}
+
+.contact-form button {
+  width: 200px;
+  padding: 20px 20px;
+  background:#d8433c;
+  border: 1px solid #d8433c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.contact-form button:hover {
+  transform: translate(10px);
+  background: #ec5b53;
+}
+
+/* Right Side */
+.contact-info {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: 70px;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.info-box i {
+  font-size: 28px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.info-box h4 {
+  font-family:"Rufina", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.info-box p {
+  font-family: "Rufina", serif;
+  font-size: 20px;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+
+
+/* Responsive */
+
+
+/* Home Page Header-Section------------------ */
+@media (max-width: 576px) {
+  .hero-section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-section-container-text-content {
+    width: 100%;
+  }
+
+  .hero-section-container-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section-container-image img {
+    width: 260px;
+    max-width: 80%;
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+}
