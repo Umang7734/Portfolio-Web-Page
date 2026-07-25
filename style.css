@@ -90,7 +90,7 @@
 /* <!----------------- Hero-Section-Start-------------- --> */
 
 .hero-section {
- width: 100%;
+  width: 100%;
   background-image: url(./images/h1_hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@
   line-height: 30px;
 }
 
-.hero-title h1{
+.hero-title h1 {
   overflow: hidden;
 }
 
@@ -422,7 +422,33 @@
   transform: translate(10px);
   color: white;
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e0e0e;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.loader h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #ff6b00;
+  z-index: 9999;
+}
 /* <!------------- Service-Section--------------- --> */
 
 .service-section {
@@ -839,73 +865,71 @@ form textarea {
 /* <!------------- Footer Section------------- --> */
 
 .footer-section {
- min-height: 40vh;
+  min-height: 40vh;
   margin-bottom: 0 100px;
-background: #000a2d;
-text-align: center;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
+  background: #000a2d;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-section-container{
+.footer-section-container {
   max-width: 1200px;
-     padding-top: 200px;
+  padding-top: 200px;
 }
 
-.footer-section-container span{
-    font-family:  "Rubik", sans-serif;
-      margin-top: 0;
-      max-width: 500px;
+.footer-section-container span {
+  font-family: "Rubik", sans-serif;
+  margin-top: 0;
+  max-width: 500px;
 }
 
 .footer-text-content {
   text-align: center;
 }
 
-.footer-text-content h1{
+.footer-text-content h1 {
   font-family: "Rubik", sans-serif;
   font-size: 50px;
-    display: block;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-
-.footer-text-content span{
-  font-family:  "Rubik", sans-serif;
-      margin-top: 0;
-      max-width: 500px;
+.footer-text-content span {
+  font-family: "Rubik", sans-serif;
+  margin-top: 0;
+  max-width: 500px;
 }
 
-.footer-text-bootom-flex{
+.footer-text-bootom-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 150px;
 }
 
-.footer-text-bootom-flex p{
+.footer-text-bootom-flex p {
   font-family: "Rubik", sans-serif;
-  color:#a3a3a3;
+  color: #a3a3a3;
 }
 
-.footer-text-bootom-flex span{
+.footer-text-bootom-flex span {
   color: #ec5b53;
 }
 
-.footer-social-icons{
+.footer-social-icons {
   min-height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.footer-social-flex{
+.footer-social-flex {
   height: 300px;
   display: flex;
   justify-content: center;
@@ -913,206 +937,197 @@ align-items: center;
   gap: 20px;
 }
 
-.footer-social-flex i{
+.footer-social-flex i {
   color: #a3a3a3;
   transition: 0.3s ease;
 }
 
-.footer-social-flex i:hover{
+.footer-social-flex i:hover {
   transform: scale(1.8);
   color: #e1ebf7;
 }
 
-
-/*---- About Page Styling ------*/ 
-
+/*---- About Page Styling ------*/
 
 /* <!---------------- About Me Section------------- --> */
 
-
-.about-me-section{
+.about-me-section {
   background-image: url(./images/hero2.jpg);
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   text-align: left;
   background-size: contain;
   min-height: 50vh;
 }
 
-.about-me-section-container{
+.about-me-section-container {
   min-height: 50vh;
   max-width: 1200px;
   padding: 10px 10%;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
 
-.about-me-section-title{
+.about-me-section-title {
   max-width: 500px;
   padding-left: 150px;
 }
 
-
-.about-me-section-title h2{
+.about-me-section-title h2 {
   font-family: "Rufina", serif;
-      font-size: 70px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
-
-.about-me-section-title span{
+.about-me-section-title span {
   font-family: "Rubika", sans-serif;
-      color: #ec5b53;
-    font-size: 18px;
-    text-transform: capitalize;
+  color: #ec5b53;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
 /* <!------------- Create-Products-Section------------------------ --> */
 
-.create-product-section{
+.create-product-section {
   padding: 50px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.create-product-section-container{
+.create-product-section-container {
   max-width: 1200px;
   padding: 10px 5%;
   margin: 0 auto;
 }
-.create-product-section-wrapper{
+.create-product-section-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
 
-.rigth-side-content{
+.rigth-side-content {
   max-width: 500px;
 }
 
-
-
-.left-side-text-content{
+.left-side-text-content {
   max-width: 500px;
   height: 500px;
   padding: 20px;
 }
 
-.left-side-text-content h2{
+.left-side-text-content h2 {
   font-family: "Rufina", serif;
- font-size: 48px;
-    display: block;
-    color: #000a2d;
-    font-weight: 600;
-    margin-bottom: 40px;
+  font-size: 48px;
+  display: block;
+  color: #000a2d;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
-.left-side-text-content p{
+.left-side-text-content p {
   padding-bottom: 30px;
-      font-family: "Rubik", sans-serif;
-    color: #10285d;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  color: #10285d;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
 }
 
-.left-side-text-content h4{
- font-family: "Rufina", serif;
- font-size: 20px;
- font-weight: 500;
+.left-side-text-content h4 {
+  font-family: "Rufina", serif;
+  font-size: 20px;
+  font-weight: 500;
   padding-left: 25px;
-    border-left: 2px solid #ff5f13;
-    margin-bottom: 30px;
+  border-left: 2px solid #ff5f13;
+  margin-bottom: 30px;
 }
-
 
 /* <!---------------- Services-Section Page Styling------------- --> */
 
-.services-section{
+.services-section {
   background-image: url(./images/hero2.jpg);
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   text-align: left;
   background-size: contain;
   min-height: 50vh;
 }
 
-.services-section-container{
-   min-height: 50vh;
+.services-section-container {
+  min-height: 50vh;
   max-width: 1200px;
   padding: 10px 10%;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
 
 /* Services-Card-Container */
 
-.Services-section-container{
+.Services-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.services-section-title{
+.services-section-title {
   padding-left: 150px;
 }
 
-.services-section-title h2{
- font-family: "Rufina", serif;
-      font-size: 70px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+.services-section-title h2 {
+  font-family: "Rufina", serif;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
-.services-section-title span{
-   font-family: "Rubika", sans-serif;
-      color: #ec5b53;
-    font-size: 18px;
-    text-transform: capitalize;
+.services-section-title span {
+  font-family: "Rubika", sans-serif;
+  color: #ec5b53;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
+/* <!----- Contact-Section-Page----- --> */
 
-    /* <!----- Contact-Section-Page----- --> */
-
-    .contact-Section{
+.contact-Section {
   background-image: url(./images/hero2.jpg);
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   text-align: left;
   background-size: contain;
   min-height: 50vh;
-    }
+}
 
-    .Contact-section-container{
-      min-height: 50vh;
+.Contact-section-container {
+  min-height: 50vh;
   max-width: 1200px;
   padding: 10px 10%;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
-    }
+}
 
-    .contact-section-title h2{
- font-family: "Rufina", serif;
-      font-size: 70px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    }
+.contact-section-title h2 {
+  font-family: "Rufina", serif;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
 
-    .contact-section-title span{
-   font-family: "Rubika", sans-serif;
-      color: #ec5b53;
-    font-size: 18px;
-    text-transform: capitalize;
+.contact-section-title span {
+  font-family: "Rubika", sans-serif;
+  color: #ec5b53;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
 /*-------------------- Contact Us Detail Section Styling--------------------- */
@@ -1174,8 +1189,6 @@ align-items: center;
   resize: none;
 }
 
-
-
 .input-row {
   display: flex;
   gap: 20px;
@@ -1188,7 +1201,7 @@ align-items: center;
 .contact-form button {
   width: 200px;
   padding: 20px 20px;
-  background:#d8433c;
+  background: #d8433c;
   border: 1px solid #d8433c;
   color: white;
   border: none;
@@ -1225,7 +1238,7 @@ align-items: center;
 }
 
 .info-box h4 {
-  font-family:"Rufina", serif;
+  font-family: "Rufina", serif;
   font-size: 22px;
   font-weight: 600;
   color: #111;
@@ -1239,11 +1252,7 @@ align-items: center;
   line-height: 1.7;
 }
 
-
-
-
 /* Responsive */
-
 
 /* Home Page Header-Section------------------ */
 @media (max-width: 576px) {
@@ -1272,3 +1281,1335 @@ align-items: center;
     margin: 0 auto;
   }
 }
+
+/* ==========================================================================
+   GLOBAL RESPONSIVE BASE — applies to all screen sizes
+   ========================================================================== */
+
+/* Global image safety — prevents overflow on every breakpoint */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent horizontal scroll site-wide */
+body {
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   BREAKPOINT: 1200px — Large Desktop → Standard Desktop
+   ========================================================================== */
+@media (max-width: 1200px) {
+  /* --- Header --- */
+  .header {
+    padding: 0 40px;
+  }
+
+  .header-navbar ul li a {
+    margin: 0 12px;
+    font-size: 15px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 10px 8%;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 60px;
+  }
+
+  /* --- About Section --- */
+  .about-section-container {
+    max-width: 100%;
+    padding: 10px 4%;
+  }
+
+  /* --- Categories Section --- */
+  .categories-section-container {
+    max-width: 100%;
+    padding: 10px 4%;
+  }
+
+  .categories-section-card {
+    width: auto;
+  }
+
+  /* --- Service / Portfolio Grid --- */
+  .service-section-container {
+    max-width: 100%;
+    padding: 10px 3%;
+  }
+
+  /* --- Contact CTA --- */
+  .content-section-wrapper {
+    gap: 80px;
+  }
+
+  /* --- Feedback Section --- */
+  .feedback-section-container {
+    max-width: 100%;
+    padding: 10px 5%;
+  }
+
+  /* --- Brand Section --- */
+  .brand-section-container {
+    max-width: 100%;
+    padding: 10px 5%;
+  }
+
+  /* --- Contact Form --- */
+  .contact-form-section-container {
+    max-width: 100%;
+    padding: 10px 5%;
+  }
+
+  /* --- Footer --- */
+  .footer-section-container {
+    max-width: 100%;
+    padding-top: 80px;
+  }
+
+  .footer-text-bootom-flex {
+    gap: 60px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 992px — Tablet Landscape / Small Desktop
+   ========================================================================== */
+@media (max-width: 992px) {
+  /* --- Header — show hamburger, hide nav --- */
+  .header {
+    padding: 0 30px;
+    height: auto;
+    min-height: 70px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    order: 3;
+    z-index: 100;
+  }
+
+  .header-navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #fff;
+    padding: 15px 0 20px;
+    gap: 0;
+    order: 4;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  /* JS will toggle this class */
+  .header-navbar.active {
+    display: flex;
+  }
+
+  .header-navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-navbar ul li a {
+    padding: 12px 20px;
+    margin: 0;
+    display: block;
+    font-size: 15px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .header-navbar-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .header-navbar-btn button {
+    width: 100%;
+    padding: 16px 20px;
+    line-height: 1;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 10px 6%;
+    min-height: 80vh;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 50px;
+  }
+
+  .hero-section-container-text-content span {
+    font-size: 16px;
+  }
+
+  /* --- About Section — stack columns --- */
+  .about-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-left-side-content {
+    width: 100%;
+  }
+
+  .about-right-side-content {
+    width: 100%;
+  }
+
+  .about-right-side-flex a {
+    font-size: 1.6rem;
+  }
+
+  /* --- Categories Section — 2 columns --- */
+  .categories-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .categories-section-card {
+    height: auto;
+    min-height: 400px;
+    width: auto;
+  }
+
+  /* --- Service / Portfolio Grid — simplify layout --- */
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item-1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .item-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item-3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .item-4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item-5 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .item-6 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+
+  .section-titles-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .section-titles-flex span {
+    margin-top: 0;
+  }
+
+  /* --- Contact CTA — stack vertically --- */
+  .content-section-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .contact-section-container {
+    height: auto;
+    padding: 40px 6%;
+  }
+
+  .left-side-content,
+  .right-side-content {
+    max-width: 100%;
+  }
+
+  /* --- Feedback Section — 2 columns --- */
+  .feedback-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feedback-section-card {
+    height: auto;
+    min-height: 220px;
+  }
+
+  /* --- Brand Grid — 3 columns --- */
+  .brand-section-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  /* --- Contact Form — stack --- */
+  .contact-form-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Left-side-content {
+    width: 100%;
+  }
+
+  .right-side-form-content {
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  /* --- Footer --- */
+  .footer-text-bootom-flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .footer-text-content h1 {
+    font-size: 36px;
+  }
+
+  /* --- About / Services Page Hero Sections --- */
+  .about-me-section-title,
+  .services-section-title {
+    padding-left: 40px;
+  }
+
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 52px;
+  }
+
+  /* --- Create Product Section (About Page) --- */
+  .create-product-section-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rigth-side-content {
+    max-width: 100%;
+  }
+
+  .left-side-text-content {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* --- Contact Page --- */
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 768px — Tablet Portrait
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* --- Header --- */
+  .header {
+    padding: 15px 20px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 10px 5%;
+    min-height: 75vh;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+
+  .hero-section-container-text-content span {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section-container-text-content p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .hero-content-btns {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-content-btns .btn-1,
+  .hero-content-btns .btn-2 {
+    padding: 16px 30px;
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  /* --- About Section --- */
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-left-side-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-right-side-content h3 {
+    font-size: 28px;
+  }
+
+  /* --- Categories Section --- */
+  .categories-section {
+    padding: 40px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  /* --- Service Section --- */
+  .service-section {
+    padding: 40px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  /* --- Contact CTA --- */
+  .contact-section {
+    background-size: cover;
+    padding: 40px 20px;
+  }
+
+  .left-side-text h2 {
+    font-size: 36px;
+  }
+
+  /* --- Feedback Section --- */
+  .feedback-section {
+    padding: 40px 20px;
+  }
+
+  .section-title-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .section-title-flex h2 {
+    font-size: 36px;
+  }
+
+  .feedback-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-section-card {
+    min-height: auto;
+  }
+
+  /* --- Brand Section — 2 columns --- */
+  .brand-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* --- Contact Form Section --- */
+  .contact-form-section {
+    padding: 40px 20px;
+  }
+
+  .contact-form-left-side-text h2 {
+    font-size: 36px;
+  }
+
+  .right-side-form-content form {
+    height: auto;
+    grid-template-rows: auto;
+  }
+
+  /* --- Footer --- */
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-text-content h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-flex {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .footer-social-icons {
+    min-height: auto;
+  }
+
+  /* --- About Page hero --- */
+  .about-me-section-title,
+  .services-section-title {
+    padding-left: 20px;
+  }
+
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 44px;
+  }
+
+  /* --- Contact page map --- */
+  .map-container {
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  .Contact-section {
+    padding: 60px 5%;
+  }
+
+  .contact-form h2 {
+    font-size: 34px;
+  }
+
+  /* --- input-row on contact page --- */
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-row input {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 576px — Mobile Landscape
+   ========================================================================== */
+@media (max-width: 576px) {
+  /* --- Header --- */
+  .header {
+    padding: 12px 16px;
+  }
+
+  .header-logo img {
+    max-width: 100px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 20px 5%;
+    min-height: 70vh;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-section-container-text-content {
+    max-height: none;
+  }
+
+  .hero-content-btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero-content-btns .btn-1,
+  .hero-content-btns .btn-2 {
+    width: 100%;
+    padding: 16px 24px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  /* --- About Section --- */
+  .about-section {
+    padding: 30px 16px;
+  }
+
+  .about-left-side-content h3 {
+    font-size: 22px;
+  }
+
+  /* --- Categories Section — 1 column --- */
+  .categories-section {
+    padding: 30px 16px;
+  }
+
+  .categories-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-section-card {
+    height: auto;
+    min-height: 360px;
+    padding: 40px 18px;
+  }
+
+  /* --- Service/Portfolio Grid — 1 column --- */
+  .service-section {
+    padding: 30px 16px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .section-span-flex {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  /* --- Contact CTA --- */
+  .content-section-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-side-text h2 {
+    font-size: 28px;
+  }
+
+  .right-side-content-btn button {
+    padding: 16px 30px;
+    line-height: 1;
+  }
+
+  /* --- Feedback Section --- */
+  .feedback-section {
+    padding: 30px 16px;
+  }
+
+  .feedback-section-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-title-flex h2 {
+    font-size: 30px;
+  }
+
+  /* --- Brand Section — 2 columns, smaller gap --- */
+  .brand-section {
+    padding: 20px 16px;
+  }
+
+  .brand-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* --- Contact Form Section --- */
+  .contact-form-section {
+    padding: 30px 16px;
+  }
+
+  .contact-form-left-side-text h2 {
+    font-size: 28px;
+  }
+
+  .contact-form-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  form input {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  form textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+
+  /* --- Footer --- */
+  .footer-text-content h1 {
+    font-size: 22px;
+    word-break: break-word;
+  }
+
+  .footer-text-bootom-flex {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-text-bootom-flex p {
+    font-size: 13px;
+  }
+
+  .footer-social-flex {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* --- About Page Hero --- */
+  .about-me-section-container,
+  .services-section-container,
+  .Contact-section-container {
+    padding: 10px 5%;
+    justify-content: center;
+  }
+
+  .about-me-section-title,
+  .services-section-title {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 38px;
+  }
+
+  /* --- Create Product Section (About Page) --- */
+  .create-product-section {
+    padding: 30px 16px;
+  }
+
+  .left-side-text-content h2 {
+    font-size: 32px;
+  }
+
+  /* --- Contact Page Map --- */
+  .map-container {
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+
+  .Contact-section {
+    padding: 40px 5%;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 480px — Small Mobile
+   ========================================================================== */
+@media (max-width: 480px) {
+  /* --- Header --- */
+  .header {
+    padding: 10px 14px;
+  }
+
+  .header-logo img {
+    max-width: 90px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 20px 4%;
+    min-height: 65vh;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-section-container-text-content span {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .hero-section-container-text-content p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .hero-content-btns .btn-1,
+  .hero-content-btns .btn-2 {
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+
+  /* --- About --- */
+  .about-left-side-content h3 {
+    font-size: 20px;
+  }
+
+  .about-right-side-content h3 {
+    font-size: 22px;
+  }
+
+  .about-right-side-flex a {
+    font-size: 1.2rem;
+  }
+
+  /* --- Section Titles --- */
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .section-title-flex h2 {
+    font-size: 26px;
+  }
+
+  /* --- Categories Cards --- */
+  .categories-section-card {
+    padding: 30px 16px;
+    min-height: 320px;
+  }
+
+  .categories-section-card h5 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .categories-section-card i {
+    width: 75px;
+    height: 75px;
+    padding: 18px;
+    font-size: 2rem;
+  }
+
+  /* --- Contact CTA --- */
+  .left-side-text h2 {
+    font-size: 24px;
+  }
+
+  /* --- Feedback Cards --- */
+  .img-and-text-flex {
+    flex-wrap: wrap;
+  }
+
+  .img-side-text {
+    padding-right: 0;
+  }
+
+  /* --- Brand Grid --- */
+  .brand-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* --- Contact Form Left Text --- */
+  .contact-form-left-side-text h2 {
+    font-size: 24px;
+  }
+
+  /* --- Footer --- */
+  .footer-text-content h1 {
+    font-size: 18px;
+  }
+
+  .footer-section-container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  /* --- About / Services Page Hero --- */
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 32px;
+  }
+
+  /* --- Contact Page --- */
+  .contact-form button {
+    width: 100%;
+  }
+
+  .map-container {
+    height: 220px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 375px — iPhone SE / Small Phones
+   ========================================================================== */
+@media (max-width: 375px) {
+  /* --- Header --- */
+  .header {
+    padding: 10px 12px;
+  }
+
+  .header-logo img {
+    max-width: 80px;
+  }
+
+  .menu-toggle {
+    font-size: 22px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 20px 3%;
+    min-height: 60vh;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-section-container-text-content p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .hero-content-btns .btn-1,
+  .hero-content-btns .btn-2 {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  /* --- About Section --- */
+  .about-section {
+    padding: 24px 12px;
+  }
+
+  .about-left-side-content h3 {
+    font-size: 18px;
+  }
+
+  .about-right-side-content h3 {
+    font-size: 20px;
+  }
+
+  /* --- Categories --- */
+  .categories-section {
+    padding: 24px 12px;
+  }
+
+  .categories-section-card {
+    padding: 24px 14px;
+    min-height: 300px;
+  }
+
+  .categories-section-card h5 {
+    font-size: 18px;
+  }
+
+  /* --- Section Titles --- */
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title-flex h2 {
+    font-size: 22px;
+  }
+
+  /* --- Service Grid --- */
+  .service-section {
+    padding: 24px 12px;
+  }
+
+  .item img {
+    height: 180px;
+  }
+
+  /* --- Contact CTA --- */
+  .left-side-text h2 {
+    font-size: 20px;
+  }
+
+  .right-side-content-btn button {
+    padding: 14px 20px;
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  /* --- Feedback --- */
+  .feedback-section {
+    padding: 24px 12px;
+  }
+
+  .feedback-section-card {
+    padding: 14px;
+  }
+
+  .feedback-section-card h2 {
+    font-size: 15px;
+  }
+
+  .feedback-section-card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* --- Brand Grid --- */
+  .brand-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* --- Contact Form --- */
+  .contact-form-section {
+    padding: 24px 12px;
+  }
+
+  .contact-form-left-side-text h2 {
+    font-size: 20px;
+  }
+
+  form input {
+    height: 46px;
+    font-size: 13px;
+  }
+
+  form textarea {
+    height: 90px;
+    font-size: 13px;
+  }
+
+  /* --- Footer --- */
+  .footer-text-content h1 {
+    font-size: 15px;
+    word-break: break-all;
+  }
+
+  .footer-text-content span,
+  .footer-section-container span {
+    font-size: 12px;
+  }
+
+  .footer-text-bootom-flex p {
+    font-size: 11px;
+  }
+
+  .footer-social-flex {
+    gap: 10px;
+  }
+
+  /* --- About / Services Page Sections --- */
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 28px;
+  }
+
+  /* --- Create Product (About Page) --- */
+  .create-product-section {
+    padding: 24px 12px;
+  }
+
+  .left-side-text-content h2 {
+    font-size: 26px;
+  }
+
+  /* --- Contact Page --- */
+  .Contact-section {
+    padding: 30px 4%;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT: 320px — Very Small Phones (Galaxy Fold, etc.)
+   ========================================================================== */
+@media (max-width: 320px) {
+  /* --- Header --- */
+  .header {
+    padding: 8px 10px;
+  }
+
+  .header-logo img {
+    max-width: 70px;
+  }
+
+  .menu-toggle {
+    font-size: 20px;
+  }
+
+  /* --- Hero Section --- */
+  .hero-section-container {
+    padding: 16px 3%;
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .hero-section-container-text-content h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .hero-section-container-text-content span {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .hero-section-container-text-content p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content-btns .btn-1,
+  .hero-content-btns .btn-2 {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+
+  /* --- About --- */
+  .about-section {
+    padding: 20px 10px;
+  }
+
+  .about-left-side-content h3 {
+    font-size: 16px;
+  }
+
+  .about-right-side-content h3 {
+    font-size: 18px;
+  }
+
+  .about-right-side-flex a {
+    font-size: 1rem;
+  }
+
+  /* --- Categories --- */
+  .categories-section {
+    padding: 20px 10px;
+  }
+
+  .categories-section-card {
+    padding: 20px 12px;
+    min-height: 280px;
+  }
+
+  .categories-section-card h5 {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  .categories-section-card i {
+    width: 65px;
+    height: 65px;
+    padding: 14px;
+    font-size: 1.6rem;
+  }
+
+  /* --- Section Titles --- */
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .section-title-flex h2 {
+    font-size: 18px;
+  }
+
+  /* --- Service Grid --- */
+  .service-section {
+    padding: 20px 10px;
+  }
+
+  .item img {
+    height: 150px;
+  }
+
+  /* --- Contact CTA --- */
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  .left-side-text h2 {
+    font-size: 18px;
+  }
+
+  .right-side-content-btn button {
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  /* --- Feedback --- */
+  .feedback-section {
+    padding: 20px 10px;
+  }
+
+  .feedback-section-card {
+    padding: 12px;
+  }
+
+  .feedback-section-card h2 {
+    font-size: 14px;
+  }
+
+  .feedback-section-card p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /* --- Brand Grid — single column --- */
+  .brand-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* --- Contact Form --- */
+  .contact-form-section {
+    padding: 20px 10px;
+  }
+
+  .contact-form-left-side-text h2 {
+    font-size: 18px;
+  }
+
+  form input {
+    height: 42px;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  form textarea {
+    height: 80px;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .input-btn .form-btn {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  /* --- Footer --- */
+  .footer-section-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer-text-content h1 {
+    font-size: 13px;
+    word-break: break-all;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-text-content span,
+  .footer-section-container span {
+    font-size: 11px;
+  }
+
+  .footer-text-bootom-flex p {
+    font-size: 10px;
+  }
+
+  /* --- About / Services Page --- */
+  .about-me-section-title h2,
+  .services-section-title h2,
+  .contact-section-title h2 {
+    font-size: 24px;
+  }
+
+  /* --- Create Product Section --- */
+  .create-product-section {
+    padding: 20px 10px;
+  }
+
+  .left-side-text-content h2 {
+    font-size: 22px;
+  }
+
+  /* --- Contact Page --- */
+  .Contact-section {
+    padding: 24px 3%;
+  }
+
+  .contact-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    height: 180px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info {
+    gap: 25px;
+  }
+
+  .info-box h4 {
+    font-size: 18px;
+  }
+
+  .info-box p {
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   HAMBURGER MENU — JavaScript Toggle Support
+   script.js toggles the .active class on .header-navbar when .menu-toggle is clicked.
+   ========================================================================== */
