@@ -306,19 +306,26 @@ gsap.from(".right-side-form-content input, .right-side-form-content textarea", {
   stagger: 0.12,
   duration: 0.6,
 });
-const loader = gsap.timeline();
+// Loader---------*
+const loaderTl = gsap.timeline();
 
-loader
-  .from(".loader h1", {
-    opacity: 0,
-    scale: 0.5,
-    duration: 1,
+loaderTl
+
+  .to(".loader-line span", {
+    width: "100%",
+    duration: 1.3,
+    ease: "power2.inOut",
   })
 
-  .to(".loader", {
+  .to(".loader-content", {
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.4,
+  })
+
+  .to(".loader-wrapper", {
     yPercent: -100,
-    duration: 1.2,
-    delay: 0.5,
+    duration: 1,
     ease: "power4.inOut",
   });
 
